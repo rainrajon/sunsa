@@ -154,7 +154,7 @@ resource "azurerm_key_vault" "key-vault" {
         tenant_id = data.azurerm_client_config.current.tenant_id
         object_id = data.azurerm_client_config.current.object_id
         key_permissions = ["Create", "Get", "List", "Purge", "Recover",]
-        secret_permissions = ["Get", "List", "decrypt", "Purge", "Recover", "Set"]
+        secret_permissions = ["Get", "List", "Purge", "Recover", "Set"]
         certificate_permissions = ["Create", "Get", "List", "Purge", "Recover", "Update"]
          }
 }
