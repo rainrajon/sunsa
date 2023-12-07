@@ -113,7 +113,7 @@ resource "azurerm_cognitive_deployment" "openai_deployment" {
   }
 }
 resource "azurerm_cognitive_deployment" "openai_deployment_soon" {
-  name                 = var.deployment_name
+  name                 = var.deployment_name_new
   cognitive_account_id = azurerm_cognitive_account.openai.id
   model {
     format  = "OpenAI"
