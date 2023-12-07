@@ -93,6 +93,11 @@ variable "deployment_name" {
  type        = string
  default     = "openaiscprod"
 }
+variable "deployment_name_new" {
+ description = "Name of openai resource"
+ type        = string
+ default     = "openaiscprod4"
+}
 variable "registry_name" {
  description = "Name of container registry"
  type        = string
