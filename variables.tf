@@ -1,7 +1,7 @@
 variable "resource_group_name" {
  description = "Name of the Azure resource group"
  type        = string
- default     = "testterraform"
+ default     = "juvenile"
 }
 variable "resource_group_location" {
  description = "Location for the Azure resource group"
@@ -71,17 +71,17 @@ variable "subnet_container_instance_cidr" {
 variable "adls_account_name" {
  description = "Name of adls storage account"
  type        = string
- default     = "storagescnonprod"
+ default     = "storagescprod"
 }
 variable "computer_vision_name" {
  description = "Name of computer vision resource"
  type        = string
- default     = "visionaiscnonprod1"
+ default     = "visionaiscprod"
 }
 variable "openai_name" {
  description = "Name of openai resource"
  type        = string
- default     = "openai-sc-NonProd"
+ default     = "openai-sc-Prod"
 }
 variable "container_name" {
  description = "Name of container resource"
@@ -91,17 +91,17 @@ variable "container_name" {
 variable "deployment_name" {
  description = "Name of openai resource"
  type        = string
- default     = "openaiscnonprod"
+ default     = "openaiscprod"
 }
 variable "registry_name" {
  description = "Name of container registry"
  type        = string
- default     = "acrscnonprod"
+ default     = "acrscprod"
 }
 variable "key_vault_name" {
  description = "Name of key vault"
  type        = string
- default     = "kvscnonprod"
+ default     = "kvscprod"
 }
 variable "azure_search_name" {
  description = "Name of the Azure search service"
