@@ -1,7 +1,7 @@
 resource "azurerm_virtual_network" "vnet" {
  name                = var.virtual_network_name
  location            = var.resource_group_location
- resource_group_name = azurerm_resource_group.rg.name
+ resource_group_name = var.resource_group_name
  address_space       = [var.address_space]
 }
 resource "azurerm_subnet" "subnet_storage" {
@@ -78,7 +78,7 @@ resource "azurerm_search_service" "ai_search" {
   name                = var.azure_search_name
   resource_group_name = var.resource_group_name
   location            = var.resource_group_location
-  sku                 = "Standard"
+  sku                 = "standard"
   replica_count       = "1"
   partition_count     = "1"
 }
